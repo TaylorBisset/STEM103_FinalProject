@@ -34,9 +34,16 @@ black_history_data = [
 ]
 
 native_american_history_data = [
-    {"name": "Sitting Bull", "description": "Hunkpapa Lakota leader who led his people during years of resistance to United States government policies."},
-    {"name": "Sacagawea", "description": "Shoshone woman who helped the Lewis and Clark Expedition."},
-    # Add more entries as needed
+    {"name": "Sitting Bull",
+     "description": "Lakota chief who led the Sioux resistance against settlers on the northern Great Plains."},
+    {"name": "Sacagawea",
+     "description": "Shoshone interpreter who traveled with the Lewis and Clark Expedition from the Dakotas to the Pacific Northwest."},
+    {"name": "Geronimo",
+     "description": "Apache leader who defended his homeland against U.S. military forces."},
+    {"name": "Tecumseh",
+     "description": "Shawnee chief and military leader who organized resistance against white settlers in the Ohio River valley."},
+    {"name": "Crazy Horse",
+     "description": "Sioux warrior and tactician who resisted European American invasion of the northern Great Plains."}
 ]
 
 """ ==== Functions ==== """
