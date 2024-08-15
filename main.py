@@ -21,9 +21,16 @@ Requirements:
 """ ==== Databases ==== """
 
 black_history_data = [
-    {"name": "Martin Luther King Jr.", "description": "Civil rights leader and advocate for nonviolent protest."},
-    {"name": "Rosa Parks", "description": "Civil rights activist known for her role in the Montgomery bus boycott."},
-    # Add more entries as needed
+    {"name": "Martin Luther King Jr.",
+     "description": "Baptist minister and civil rights leader in the U.S. during the mid-1950s."},
+    {"name": "Rosa Parks",
+     "description": "Civil rights activist whose refusal to give up her bus seat sparked the Montgomery bus boycott in 1955–56."},
+    {"name": "Malcolm X",
+     "description": "African American leader in the Nation of Islam who promoted race pride and Black nationalism in the early 1960s."},
+    {"name": "Harriet Tubman",
+     "description": "Abolitionist who escaped slavery and led others to freedom via the Underground Railroad before the Civil War."},
+    {"name": "James Baldwin",
+     "description": "Essayist, novelist, and playwright known for his impactful writing on race in America."}
 ]
 
 native_american_history_data = [
@@ -36,11 +43,11 @@ native_american_history_data = [
 
 def explore_history(category):
     # Implement logic to display information based on the selected category
-
+    return
 
 def take_quiz(category):
     # Implement logic for a quiz related to the selected category
-
+    return
 
 """ ==== Main Loop ==== """
 
