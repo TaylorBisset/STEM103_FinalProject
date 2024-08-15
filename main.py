@@ -17,7 +17,9 @@ Requirements:
 3. Implement a quiz feature that tests users' knowledge about the selected category.
 4. Make the program interactive and engaging
 """
-# Sample Database (Only two examples of lists are given. You can add more or different ones)
+
+""" ==== Databases ==== """
+
 black_history_data = [
     {"name": "Martin Luther King Jr.", "description": "Civil rights leader and advocate for nonviolent protest."},
     {"name": "Rosa Parks", "description": "Civil rights activist known for her role in the Montgomery bus boycott."},
@@ -30,13 +32,18 @@ native_american_history_data = [
     # Add more entries as needed
 ]
 
+""" ==== Functions ==== """
+
 def explore_history(category):
     # Implement logic to display information based on the selected category
+
 
 def take_quiz(category):
     # Implement logic for a quiz related to the selected category
 
-# Main program loop
+
+""" ==== Main Loop ==== """
+
 while True:
     print("\n==== Social Equity Awareness Program ====")
     print("1. Explore Black History")
