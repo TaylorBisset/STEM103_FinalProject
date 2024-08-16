@@ -64,7 +64,15 @@ def take_quiz(category):
     # Implement logic for a quiz related to the selected category
     print("\n==== Take a Quiz ====")
     return
-
+'''
+set score to zero
+pick a random description
+list the names
+ask the user to type a name
+if the name matches the correct name attached to the description, increment score
+after completing all 5 questions, grade by dividing score by 5
+print grade
+'''
 
 # ==== Main Loop ==== 
 
