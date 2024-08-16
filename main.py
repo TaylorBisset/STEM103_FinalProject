@@ -129,13 +129,16 @@ while True:
         explore_history(native_american_history_data)
     elif choice == "3":
         quiz_category = input("\nTake a Test \n\t1 for Black American History \n\t2 for Native American History \nEnter the category for the quiz: ")
-        if choice == "1":
+        if quiz_category == "1":
             print("Take a Black American History Quiz")
-        elif choice == "2":
+            take_quiz(black_history_data)
+        elif quiz_category == "2":
             print("Take a Native American History Quiz")
-        take_quiz(black_history_data if quiz_category == "1" else native_american_history_data)
+            take_quiz(native_american_history_data)
+        else:
+            print(f"\tInvalid quiz category: {quiz_category} \n\tPlease enter a number between 1 and 2.")
     elif choice == "4":
         print("\n\t\tExiting the program. \n\t\tGoodbye!\n")
         break
     else:
-        print(f"\tInvalid choice {choice} \n\tPlease enter a number between 1 and 4.")
+        print(f"\tInvalid choice: {choice} \n\tPlease enter a number between 1 and 4.")
