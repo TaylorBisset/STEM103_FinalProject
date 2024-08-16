@@ -61,21 +61,34 @@ def explore_history(category):
         print(f"Description: {item['description']}\n")
 
 def take_quiz(category):
-    # Implement logic for a quiz related to the selected category
-    print("\n==== Take a Quiz ====")
-    return
-'''
-Initialize score to zero.
-Repeat the following 5 times: 
-    1. Pick a random description from the category.
-    2. List the names of all individuals from the category.
-    3. Ask the user to type the name the matches the description.
-    4. If the user's input matches the correct name, increment the score.
+    '''
+    Initialize score to zero.
+    Repeat the following 5 times: 
+        1. Pick a random description from the category.
+        2. List the names of all individuals from the category.
+        3. Ask the user to type the name the matches the description.
+        4. If the user's input matches the correct name, increment the score.
 
-After all 5 questions are answered: 
-    1. Calculate grade by dividing score by 5.
-    2. Print the user's grade.
-'''
+    After all 5 questions are answered: 
+        1. Calculate grade by dividing score by 5.
+        2. Print the user's grade.
+    '''
+    score = 0
+
+    for i in range(5):
+        # 1. Pick a random description from the category.
+        item = random.choice(category)
+        description = item['description']
+        correct_name = item['name']
+        print(f"\nWhose description does this match:\n{description}")
+
+        # 2. List the names of all individuals from the category.
+        all_names = []
+        for item in category:
+            all_names.append(item['name'])
+        random.shuffle(all_names)
+        for name in all_names:
+            print(name)
 
 # ==== Main Loop ==== 
 
@@ -96,6 +109,10 @@ while True:
         explore_history(native_american_history_data)
     elif choice == "3":
         quiz_category = input("\nTake a Test \n\t1 for Black American History \n\t2 for Native American History \nEnter the category for the quiz: ")
+        if choice == "1":
+            print("Take a Black American History Quiz")
+        elif choice == "2":
+            print("Take a Native American History Quiz")
         take_quiz(black_history_data if quiz_category == "1" else native_american_history_data)
     elif choice == "4":
         print("\n\t\tExiting the program. \n\t\tGoodbye!\n")
