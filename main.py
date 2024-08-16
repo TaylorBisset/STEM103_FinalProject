@@ -18,7 +18,9 @@ Requirements:
 4. Make the program interactive and engaging
 """
 
+
 """ ==== Databases ==== """
+
 
 black_history_data = [
     {"name": "Martin Luther King Jr.",
@@ -46,7 +48,9 @@ native_american_history_data = [
      "description": "Sioux warrior and tactician who resisted European American invasion of the northern Great Plains."}
 ]
 
+
 """ ==== Functions ==== """
+
 
 def explore_history(category):
     # Implement logic to display information based on the selected category
@@ -59,7 +63,9 @@ def take_quiz(category):
     print("\n==== Take a Quiz ====")
     return
 
+
 """ ==== Main Loop ==== """
+
 
 while True:
     print("\n==== Social Equity Awareness Program ====")
@@ -77,10 +83,10 @@ while True:
         print(f"\n==== Explore Native American History ====\n")
         explore_history(native_american_history_data)
     elif choice == "3":
-        quiz_category = input("Enter the category for the quiz \n(1 for Black American History, 2 for Native American History): ")
+        quiz_category = input("\nTake a Test \n\t1 for Black American History \n\t2 for Native American History \nEnter the category for the quiz: ")
         take_quiz(black_history_data if quiz_category == "1" else native_american_history_data)
     elif choice == "4":
-        print("\nExiting the program. \nGoodbye!\n")
+        print("\n\t\tExiting the program. \n\t\tGoodbye!\n")
         break
     else:
-        print("Invalid choice. \nPlease enter a number between 1 and 4.")
+        print(f"\tInvalid choice {choice} \n\tPlease enter a number between 1 and 4.")
