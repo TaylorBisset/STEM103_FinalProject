@@ -65,13 +65,16 @@ def take_quiz(category):
     print("\n==== Take a Quiz ====")
     return
 '''
-set score to zero
-pick a random description
-list the names
-ask the user to type a name
-if the name matches the correct name attached to the description, increment score
-after completing all 5 questions, grade by dividing score by 5
-print grade
+Initialize score to zero.
+Repeat the following 5 times: 
+    1. Pick a random description from the category.
+    2. List the names of all individuals from the category.
+    3. Ask the user to type the name the matches the description.
+    4. If the user's input matches the correct name, increment the score.
+
+After all 5 questions are answered: 
+    1. Calculate grade by dividing score by 5.
+    2. Print the user's grade.
 '''
 
 # ==== Main Loop ==== 
