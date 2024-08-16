@@ -59,6 +59,7 @@ def explore_history(category):
     for item in category:
         print(f"Name: {item['name']}")
         print(f"Description: {item['description']}\n")
+    print("= = = = = = = = = = = = = = = = = = = = \n")
 
 def take_quiz(category):
     '''
@@ -109,7 +110,8 @@ def take_quiz(category):
 
     # 6. Print the user's grade.
     print(f"\n\t\tYou scored {grade:.2f}% with {score} out of 5\n")
-
+    print("= = = = = = = = = = = = = = = = = = = = \n")
+  
 # ==== Main Loop ==== 
 
 while True:
