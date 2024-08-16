@@ -55,7 +55,7 @@ native_american_history_data = [
 # ==== Functions ==== 
 
 def explore_history(category):
-    # Implement logic to display information based on the selected category
+    random.shuffle(category)
     for item in category:
         print(f"Name: {item['name']}")
         print(f"Description: {item['description']}\n")
