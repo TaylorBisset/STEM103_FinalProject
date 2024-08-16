@@ -26,7 +26,7 @@ import random
 # ==== Databases ==== 
 
 black_history_data = [
-    {"name": "Martin Luther King Jr.",
+    {"name": "Martin Luther King Jr",
      "description": "Baptist minister and civil rights leader in the U.S. during the mid-1950s."},
     {"name": "Rosa Parks",
      "description": "Civil rights activist whose refusal to give up her bus seat sparked the Montgomery bus boycott in 1955–56."},
@@ -74,10 +74,16 @@ def take_quiz(category):
         6. Print the user's grade.
     '''
     score = 0
+    description_used = []
 
     for i in range(5):
         # 1. Pick a random description from the category.
-        item = random.choice(category)
+        while True:
+            item = random.choice(category)
+            if item['description'] not in description_used:
+                description_used.append(item['description'])
+                break
+
         description = item['description']
         correct_name = item['name']
         print(f"\nWhose description does this match:\n{description}\n")
