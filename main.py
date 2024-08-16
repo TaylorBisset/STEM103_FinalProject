@@ -50,17 +50,20 @@ native_american_history_data = [
 
 def explore_history(category):
     # Implement logic to display information based on the selected category
-    return
+    for item in category:
+        print(f"Name: {item['name']}")
+        print(f"Description: {item['description']}\n")
 
 def take_quiz(category):
     # Implement logic for a quiz related to the selected category
+    print("\n==== Take a Quiz ====")
     return
 
 """ ==== Main Loop ==== """
 
 while True:
     print("\n==== Social Equity Awareness Program ====")
-    print("1. Explore Black History")
+    print("1. Explore Black American History")
     print("2. Explore Native American History")
     print("3. Take a Quiz")
     print("4. Quit")
@@ -68,14 +71,16 @@ while True:
     choice = input("Enter your choice (1-4): ")
 
     if choice == "1":
+        print(f"\n==== Explore Black American History ====\n")
         explore_history(black_history_data)
     elif choice == "2":
+        print(f"\n==== Explore Native American History ====\n")
         explore_history(native_american_history_data)
     elif choice == "3":
-        quiz_category = input("Enter the category for the quiz (1 for Black History, 2 for Native American History): ")
+        quiz_category = input("Enter the category for the quiz \n(1 for Black American History, 2 for Native American History): ")
         take_quiz(black_history_data if quiz_category == "1" else native_american_history_data)
     elif choice == "4":
-        print("Exiting the program. Goodbye!")
+        print("\nExiting the program. \nGoodbye!\n")
         break
     else:
-        print("Invalid choice. Please enter a number between 1 and 4.")
+        print("Invalid choice. \nPlease enter a number between 1 and 4.")
