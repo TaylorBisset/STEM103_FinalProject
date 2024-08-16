@@ -70,8 +70,8 @@ def take_quiz(category):
         4. If the user's input matches the correct name, increment the score.
 
     After all 5 questions are answered: 
-        1. Calculate grade by dividing score by 5.
-        2. Print the user's grade.
+        5. Calculate grade by dividing score by 5.
+        6. Print the user's grade.
     '''
     score = 0
 
@@ -80,7 +80,7 @@ def take_quiz(category):
         item = random.choice(category)
         description = item['description']
         correct_name = item['name']
-        print(f"\nWhose description does this match:\n{description}")
+        print(f"\nWhose description does this match:\n{description}\n")
 
         # 2. List the names of all individuals from the category.
         all_names = []
@@ -89,6 +89,20 @@ def take_quiz(category):
         random.shuffle(all_names)
         for name in all_names:
             print(name)
+        print()
+
+        # 3. Ask the user to type the name the matches the description.
+        user_answer = input("Please type your answer: ")
+
+        # 4. If the user's input matches the correct name, increment the score.
+        if user_answer == correct_name:
+            score += 1
+    
+    # 5. Calculate grade by dividing score by 5.
+    grade = (score / 5) * 100
+
+    # 6. Print the user's grade.
+    print(f"\n\t\tYou scored {grade:.2f}% with {score} out of 5\n")
 
 # ==== Main Loop ==== 
 
