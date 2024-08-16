@@ -18,9 +18,12 @@ Requirements:
 4. Make the program interactive and engaging
 """
 
+# ==== Modules ====
 
-""" ==== Databases ==== """
+import random
 
+
+# ==== Databases ==== 
 
 black_history_data = [
     {"name": "Martin Luther King Jr.",
@@ -49,8 +52,7 @@ native_american_history_data = [
 ]
 
 
-""" ==== Functions ==== """
-
+# ==== Functions ==== 
 
 def explore_history(category):
     # Implement logic to display information based on the selected category
@@ -64,8 +66,7 @@ def take_quiz(category):
     return
 
 
-""" ==== Main Loop ==== """
-
+# ==== Main Loop ==== 
 
 while True:
     print("\n==== Social Equity Awareness Program ====")
