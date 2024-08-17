@@ -4,6 +4,24 @@
 **STEM103 Summer 2024 Final Project**
 **Instructor: Rashi Goyal**
 
+## Table of Contents
+- [Social Equity Awareness Program](#social-equity-awareness-program)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+  - [Features](#features)
+  - [Program Structure](#program-structure)
+    - [Databases](#databases)
+    - [Functions](#functions)
+    - [Main Loop](#main-loop)
+  - [File Structure](#file-structure)
+  - [How to Run the Program](#how-to-run-the-program)
+    - [On Windows:](#on-windows)
+    - [On macOS:](#on-macos)
+    - [On Linux:](#on-linux)
+  - [Requirements](#requirements)
+  - [License](#license)
+  - [Contact](#contact)
+
 ## Project Overview
 This project is the **Final Project** for my *STEM103 course in Summer 2024*. The ***Social Equity Awareness Program*** aims to educate users about significant figures and events related to marginalized communities in history, such as Black and Native American history. 
 The program provides an interactive way to explore notable individuals, their contributions, and historical milestones, and includes a quiz feature to test users' knowledge on these topics.
@@ -13,7 +31,7 @@ The program provides an interactive way to explore notable individuals, their co
 - **Interactive Quizzes**: Users can test their knowledge by taking quizzes on the selected historical category.
 - **Engaging Interface**: The program is designed to be user-friendly and educational, making learning about history both informative and enjoyable.
 
-## Structure
+## Program Structure
 ### Databases
 - **Black History Data**: Contains information about influential figures in Black American history. 
 - **Native American History Data**: Contains information about notable figures in Native American history.
@@ -22,25 +40,37 @@ The program provides an interactive way to explore notable individuals, their co
 - `explore_history(category)`: Allows users to explore information about the selected historical category.
 - `take_quiz(category)`: A quiz feature that tests users' knowledge about the selected category.
 
-## Main Loop
+### Main Loop
 The program's main loop allows users to:
 
 - Choose a historical category to explore.
 - Take a quiz on the selected category.
 - Exit the program.
 
+## File Structure
+```
+STEM103_FinalProject/
+├── source/
+│     └── main.py
+├── releases/
+│     ├── Social_Equity_Awareness_Program.exe (Windows)
+│     └── Social_Equity_Awareness_Program.app (macOS)
+├── LICENSE
+└── README.md
+```
+
 ## How to Run the Program
 ### On Windows:
 1. **Extract the ZIP file** to a folder.
 2. **Navigate to the folder** where the extracted files are located.
-3. **Open the** `STEM103_FinalProject` folder, then the `builds` folder.
-4. **Double-click on `Social_Equity_Awareness_Program.exe`** to run the program.
+3. **Open the** `STEM103_FinalProject` folder, then the `releases` folder.
+4. **Double-click** on `Social_Equity_Awareness_Program.exe` to run the program.
 
 ### On macOS:
 1. **Extract the ZIP file** to a folder.
 2. **Navigate to the folder** where the extracted files are located.
-3. **Open the** `STEM103_FinalProject` folder, then the `builds` folder.
-4. **Double-click on `Social_Equity_Awareness_Program.app`** to run the program.
+3. **Open the** `STEM103_FinalProject` folder, then the `releases` folder.
+4. **Double-click** on `Social_Equity_Awareness_Program.app` to run the program.
 
 ### On Linux:
 1. **Extract the ZIP file** to a folder.
@@ -55,3 +85,6 @@ The program's main loop allows users to:
 
 ## License
 This project is licensed under the MIT License. You can view the full license terms in the [LICENSE](https://github.com/TaylorBisset/STEM103_FinalProject/blob/main/LICENSE) file.
+
+## Contact
+For any questions or issues, please open an [issue on GitHub](https://github.com/TaylorBisset/STEM103_FinalProject/issues).
