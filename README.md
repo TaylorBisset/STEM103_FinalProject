@@ -1,8 +1,8 @@
 # Social Equity Awareness Program
 
-**Taylor Bisset**
-**STEM103 Summer 2024 Final Project**
-**Instructor: Rashi Goyal**
+**Taylor Bisset**<br>
+**STEM103 Summer 2024 Final Project**<br>
+**Instructor: Rashi Goyal**<br>
 
 ## Table of Contents
 - [Social Equity Awareness Program](#social-equity-awareness-program)
@@ -14,11 +14,6 @@
     - [Functions](#functions)
     - [Main Loop](#main-loop)
   - [File Structure](#file-structure)
-  - [How to Run the Program](#how-to-run-the-program)
-    - [On Windows:](#on-windows)
-    - [On macOS:](#on-macos)
-    - [On Linux:](#on-linux)
-  - [Requirements](#requirements)
   - [License](#license)
   - [Contact](#contact)
 
@@ -52,36 +47,9 @@ The program's main loop allows users to:
 STEM103_FinalProject/
 ├── source/
 │     └── main.py
-├── releases/
-│     ├── Social_Equity_Awareness_Program.exe (Windows)
-│     └── Social_Equity_Awareness_Program.app (macOS)
 ├── LICENSE
 └── README.md
 ```
-
-## How to Run the Program
-### On Windows:
-1. **Extract the ZIP file** to a folder.
-2. **Navigate to the folder** where the extracted files are located.
-3. **Open the** `STEM103_FinalProject` folder, then the `releases` folder.
-4. **Double-click** on `Social_Equity_Awareness_Program.exe` to run the program.
-
-### On macOS:
-1. **Extract the ZIP file** to a folder.
-2. **Navigate to the folder** where the extracted files are located.
-3. **Open the** `STEM103_FinalProject` folder, then the `releases` folder.
-4. **Double-click** on `Social_Equity_Awareness_Program.app` to run the program.
-
-### On Linux:
-1. **Extract the ZIP file** to a folder.
-2. **Open Terminal** using: <br>`Ctrl` + `Alt` + `T`.
-3. **Navigate to the folder** where the extracted files are located: <br>`cd` `/path/to/your/folder/STEM103_FinalProject/`
-4. **Run the Script** by using <br>`python3 source/main.py`
-
-## Requirements
-- For Windows, the executable should work on Windows 10 and later.
-- For macOS, the app should work on macOS Catalina (10.15) and later.
-- For Linux, Python 3.x should be installed if running the script directly.
 
 ## License
 This project is licensed under the MIT License. You can view the full license terms in the [LICENSE](https://github.com/TaylorBisset/STEM103_FinalProject/blob/main/LICENSE) file.
