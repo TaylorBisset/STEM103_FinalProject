@@ -52,3 +52,6 @@ The program's main loop allows users to:
 - For Windows, the executable should work on Windows 10 and later.
 - For macOS, the app should work on macOS Catalina (10.15) and later.
 - For Linux, Python 3.x should be installed if running the script directly.
+
+## License
+This project is licensed under the MIT License. You can view the full license terms in the [LICENSE](https://github.com/TaylorBisset/STEM103_FinalProject/blob/main/LICENSE) file.
